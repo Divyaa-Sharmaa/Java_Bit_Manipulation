@@ -9,6 +9,7 @@ public class GetIthBitt {
         int i = sc.nextInt();
         int result = getIthBit(n, i);
         System.out.println("Ith bit is: " + result);
+        System.out.println("setIth Bit is: " + (n | (1 << i)));
         sc.close();
     }
 

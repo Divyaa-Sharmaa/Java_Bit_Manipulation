@@ -7,9 +7,10 @@ public class ClearAndUpdate {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int i = sc.nextInt();
-        int newBit = sc.nextInt();
+        // int newBit = sc.nextInt();
         // System.out.println(clearIthBit(x, i));
-        System.out.println(updateIthBit(x, i, newBit));
+        // System.out.println(updateIthBit(x, i, newBit));
+        System.out.println(clearLastBit(x, i));
         sc.close();
     }
 
@@ -27,5 +28,10 @@ public class ClearAndUpdate {
         // n = clearIthBit(n, i);
         // int bitMask = newBit << i;
         // return (n | bitMask);
+    }
+
+    public static int clearLastBit(int n, int i) {
+        int bitMask = (~0) << i;
+        return n & bitMask;
     }
 }
